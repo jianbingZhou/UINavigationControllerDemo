@@ -10,12 +10,13 @@
 		AA5BDDB91D59B36500E3EA26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5BDDB81D59B36500E3EA26 /* main.m */; };
 		AA5BDDBC1D59B36500E3EA26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5BDDBB1D59B36500E3EA26 /* AppDelegate.m */; };
 		AA5BDDBF1D59B36500E3EA26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5BDDBE1D59B36500E3EA26 /* ViewController.m */; };
-		AA5BDDC21D59B36500E3EA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5BDDC01D59B36500E3EA26 /* Main.storyboard */; };
 		AA5BDDC51D59B36500E3EA26 /* UINavigationControllerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA5BDDC31D59B36500E3EA26 /* UINavigationControllerDemo.xcdatamodeld */; };
 		AA5BDDC71D59B36500E3EA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5BDDC61D59B36500E3EA26 /* Assets.xcassets */; };
 		AA5BDDCA1D59B36500E3EA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5BDDC81D59B36500E3EA26 /* LaunchScreen.storyboard */; };
 		AA5BDDD51D59B36600E3EA26 /* UINavigationControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5BDDD41D59B36600E3EA26 /* UINavigationControllerDemoTests.m */; };
 		AA5BDDE01D59B36600E3EA26 /* UINavigationControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5BDDDF1D59B36600E3EA26 /* UINavigationControllerDemoUITests.m */; };
+		AA5BDDEF1D59B42000E3EA26 /* JBNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5BDDEE1D59B42000E3EA26 /* JBNavigationViewController.m */; };
+		AA5BDDF51D59B6E200E3EA26 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5BDDF41D59B6E200E3EA26 /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 		AA5BDDBB1D59B36500E3EA26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AA5BDDBD1D59B36500E3EA26 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AA5BDDBE1D59B36500E3EA26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AA5BDDC11D59B36500E3EA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA5BDDC41D59B36500E3EA26 /* UINavigationControllerDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UINavigationControllerDemo.xcdatamodel; sourceTree = "<group>"; };
 		AA5BDDC61D59B36500E3EA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA5BDDC91D59B36500E3EA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +53,10 @@
 		AA5BDDDB1D59B36600E3EA26 /* UINavigationControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UINavigationControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5BDDDF1D59B36600E3EA26 /* UINavigationControllerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationControllerDemoUITests.m; sourceTree = "<group>"; };
 		AA5BDDE11D59B36600E3EA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5BDDED1D59B42000E3EA26 /* JBNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBNavigationViewController.h; sourceTree = "<group>"; };
+		AA5BDDEE1D59B42000E3EA26 /* JBNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBNavigationViewController.m; sourceTree = "<group>"; };
+		AA5BDDF31D59B6E200E3EA26 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		AA5BDDF41D59B6E200E3EA26 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +109,12 @@
 			children = (
 				AA5BDDBA1D59B36500E3EA26 /* AppDelegate.h */,
 				AA5BDDBB1D59B36500E3EA26 /* AppDelegate.m */,
+				AA5BDDED1D59B42000E3EA26 /* JBNavigationViewController.h */,
+				AA5BDDEE1D59B42000E3EA26 /* JBNavigationViewController.m */,
 				AA5BDDBD1D59B36500E3EA26 /* ViewController.h */,
 				AA5BDDBE1D59B36500E3EA26 /* ViewController.m */,
-				AA5BDDC01D59B36500E3EA26 /* Main.storyboard */,
+				AA5BDDF31D59B6E200E3EA26 /* NextViewController.h */,
+				AA5BDDF41D59B6E200E3EA26 /* NextViewController.m */,
 				AA5BDDC61D59B36500E3EA26 /* Assets.xcassets */,
 				AA5BDDC81D59B36500E3EA26 /* LaunchScreen.storyboard */,
 				AA5BDDCB1D59B36500E3EA26 /* Info.plist */,
@@ -248,7 +255,6 @@
 			files = (
 				AA5BDDCA1D59B36500E3EA26 /* LaunchScreen.storyboard in Resources */,
 				AA5BDDC71D59B36500E3EA26 /* Assets.xcassets in Resources */,
-				AA5BDDC21D59B36500E3EA26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +282,8 @@
 				AA5BDDBF1D59B36500E3EA26 /* ViewController.m in Sources */,
 				AA5BDDBC1D59B36500E3EA26 /* AppDelegate.m in Sources */,
 				AA5BDDC51D59B36500E3EA26 /* UINavigationControllerDemo.xcdatamodeld in Sources */,
+				AA5BDDEF1D59B42000E3EA26 /* JBNavigationViewController.m in Sources */,
+				AA5BDDF51D59B6E200E3EA26 /* NextViewController.m in Sources */,
 				AA5BDDB91D59B36500E3EA26 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,14 +320,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA5BDDC01D59B36500E3EA26 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA5BDDC11D59B36500E3EA26 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AA5BDDC81D59B36500E3EA26 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -416,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UINavigationControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jianbing-Zhou.UINavigationControllerDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UINavigationControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jianbing-Zhou.UINavigationControllerDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";

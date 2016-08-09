@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "NextViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"VC";
+//    self.navigationController.hidesBarsOnTap = YES;
+    [self.view setBackgroundColor:[UIColor greenColor]];
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
+    btn.center = CGPointMake(self.view.center.x
+                             , self.view.center.y);
+    [btn setBackgroundColor:[UIColor blackColor]];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)push {
+    [self.navigationController pushViewController:[NextViewController new] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
