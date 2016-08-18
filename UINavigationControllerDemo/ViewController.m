@@ -27,6 +27,12 @@
     [btn addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    //这里证明 出栈没有销毁VC但是 navgationController.viewControllers.count 会改变
+    [super viewWillAppear:animated];
+    NSLog(@"ViewController.h*****%ld",self.navigationController.viewControllers.count);
+}
+
 - (void)push {
     [self.navigationController pushViewController:[NextViewController new] animated:YES];
 }

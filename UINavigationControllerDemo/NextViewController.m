@@ -27,6 +27,12 @@
     [btn setTitle:@"back" forState:UIControlStateNormal];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"NextViewController*****%ld",self.navigationController.viewControllers.count);
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

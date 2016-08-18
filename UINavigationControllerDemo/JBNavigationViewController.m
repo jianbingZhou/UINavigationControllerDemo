@@ -28,7 +28,7 @@
 
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    /*判断手势是interactivePopGestureRecognizer 还是别的（hidesBarsOnTap）如果不这么判断会手势冲突：当self.viewControllers.count <= 1 时用interactivePopGestureRecognizer回导致navigationBarHidden 失效（我觉得此时是系统默认返回NO）
+    /*判断手势是interactivePopGestureRecognizer 还是别的（hidesBarsOnTap）如果不这么判断会手势冲突：当self.viewControllers.count <= 1 时用interactivePopGestureRecognizer会导致navigationBarHidden 失效（我觉得此时是系统默认返回NO）
     
     self.hidesBarsOnSwipe = YES;
     self.hidesBarsOnTap = YES;
